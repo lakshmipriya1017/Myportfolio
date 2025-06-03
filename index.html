@@ -3,23 +3,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale
     =1.0">
-    <title> document </title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
-<body>
-    <h1>Welcome to My portfolio</h1>
-    <a href="">About</a>
-    <h1>G G LAKSHMI PRIYA</h1>
-    <P> I am passionate on web developer with a focus front-end technologies.
-    </P>
-    <p>
-        I am currently pursuing my B Tech in <em>BVC COLLEGE OF ENGINEERING</em>  
-    </p>
-<h1>My skills</h1>
-<ol>
-    <li> python Basics</li>
-    <li> HTML Basics</li>
-    <li> CSS Basics</li>
-</ol>
 
+<body>
+    <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p style="font-size: 20px; font-style: italic;">Learner. Developer.
+    Designer.</p>
+    <nav>
+    <a href="#About"><button class="button">About</button></a>
+    <a href="#Skills"><button class="button">Skills</button></a>
+    <a href="#Projects"><button class="button">Projects</button></a>
+    <a href="#Contact"><button class="button">contact</button></a>
+    </nav>
+    </header>
+
+<main>
+    <section id="About">
+        <h2>G Gaja Lakshmi Priya </h2>
+        <img src="my image.jpg" alt="my photo" width="200" height="200">
+        
+        <p>I am an Aspiring Web Developer with a focus on Front-End Technologies<br><br>
+        I am currently pursuing my 3rd B.Tech in <B>BVC COLLEGE OF ENGINEERING</B>, Rajahmundry</p> 
+    </section>
+
+<section id="Skills">
+    <h2> My Skills</h2>
+    <ol>
+        <li>C Basics</li> 
+        <li>HTML Basics</li>
+        <li>CSS Basics</li>
+        <li>PYTHON Basics</li>
+        <li>JAVASCRIPT Basics</li>
+</ol>
+</section>
+
+<section id="Projects">
+    <h2>My projects</h2>
+    <table border="5" cellpadding="5" cellspacing="3" > 
+        <thead>
+            <tr>
+            <th>Projects</th>
+            <th>Description</th>
+            <th>Technologies</th>
+            </tr>
+        </thead>
+
+        <tbody>
+<tr>
+            <td><a href=" https://lakshmipriya1017.github.io/BMI-calculator"
+             target="_blank">BMI-CALCULATOR</a></td>
+             <td>Body mass index calculator</td>
+             <td>Html ,Css, Js </td>
+</tr>
+<tr>
+    <td><a href=" https://lakshmipriya1017.github.io/digital-clock"
+        target="_blank">STOP WATCH</a></td>            
+        <td>Display the time to start/stop</td>
+        <td>Html ,Css, Js </td>
+</tbody>
+        </table>
+
+<br>
+</section>
+
+<section id="Contact">
+    <h2>Contact Me</h2>
+    <p><i>Feel free to get in touch with me using the form below:
+    </i> </p>
+    <form action="#">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="NAME" required placeholder="Enter your Name...">
+</div>
+<div>
+    <label for="email">Email:</label>
+            <input type="Email" id="Email" name="Email" required placeholder="Enter your Email...">
+</div>
+<br>
+<div>
+  <label><strong>Choose your gender:</strong></label>
+<br>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="female" required>
+  <label for="female">Female</label>
+</div>
+
+ <div>
+  <label><strong>Select your interests</strong></label> <br>
+
+   <input type="checkbox" name="int" id="problem solving" value="problem solving">
+   <label for="problem solving">problem solving</label><br>
+   <input type="checkbox" name="int" id="reading" value="reading">
+   <label for="reading">Reading</label><br>
+   
+   <input type="checkbox" name="int" id="programming" value="programming">
+   <label for="programming">Programming</label>
+</div>
+
+    <div>
+        <h4>Bio</h4>
+        <label for="bio">Bio (up to 200 characters):</label>
+        <textarea name="bio" id="bio" rows="3" cols="25" maxlength="200" placeholder="Write a short bio about yourself">
+   </textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="Submit"> Submit</button>
+    </div>
+ </form>
+</section>
+<section>
+<div class="social- icons">
+    <h3>connect with me:</h3>
+    <a href="https://github.com/lakshmipriya1017/priya.git" target="_blank" rel="noopener noreferrer">
+        <img src=" https://www.pngarts.com/files/8/Github-Logo-Transparent-Background-PNG.png" 
+        alt="My Github profile " style="width: 40px; height: 40px;">
+    </a>
+       <a href="https://www.linkedin.com/in/lakshmi-priya-882804241" target="_blank" rel="noopener noreferrer">
+       <img src="https://tse1.mm.bing.net/th?id=OIP.MK_dJNpYGWchvAMlnHT02wHaHa&pid=Api&P=0&h=180"
+       alt="My linkedin profile " style="width: 50px; height: 50px;">
+       </a>
+        </div>
+</section>
+</main>
+<br>
+   <a href=""><button class="top">TOP</button></a>
+<footer>
+    <div>
+        <p>@ 2025 My Portfolio</p>
+   </div>
+</footer>
+
+<!--<script>
+  alert("Hello! Everyone I'm Lakshmi priya. Welcome to my portfolio website!");
+ </script>-->
 </body>
 </html>
